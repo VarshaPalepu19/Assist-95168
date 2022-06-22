@@ -1,0 +1,31 @@
+<template>
+    <lightning-card  title="Customer Information">
+        <div class="slds-m-bottom_x-large">
+    
+            <!-- Input for Contact Name -->
+            <!--<div class="slds-p-around_medium">
+                <lightning-input type="text" label="Contact Name" placeholder="Enter Name"></lightning-input>
+            </div>-->
+            <div class="slds-m-bottom_small">
+                <lightning-input type="text"
+                   value={searchValue}
+                   label="Contact Name"
+                   onchange={searchkey}></lightning-input>
+             </div>
+             
+             <lightning-button label="Search"
+                onclick={handleSearchKeyword}
+                variant="brand"></lightning-button>
+                <div class="slds-m-top_x-medium slds-p-around_medium">
+                    <!-- <c-child-cmp receivedFromParent={searchValue}></c-child-cmp> -->
+                    <c-child-cmp ></c-child-cmp>
+                </div>
+            <div class="slds-m-top_x-medium slds-p-around_medium">
+                <c-child-cmp1></c-child-cmp1>
+            </div>
+            <div class="slds-m-top_x-medium slds-p-around_medium">
+                <c-child-cmp2></c-child-cmp2>
+            </div>
+            </div>
+        </lightning-card>
+</template>

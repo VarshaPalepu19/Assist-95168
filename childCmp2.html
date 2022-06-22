@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-p-around_medium">
+        <!--For each loop to display Contact from the list.-->
+        <!--<template for:each={availableAccounts} for:item="i" if:true={Accounts}>
+            <p key={i.Id}>{i.Name}</p>
+        </template>-->
+       <div class="slds-scrollable_none slds-p-around_medium">
+           <template if:true={availableLeads}>
+               <lightning-datatable key-field="Id" data={availableLeads} columns={columns}
+                   onrowaction={handleRowAction}>
+               </lightning-datatable>
+               </template>
+       </div>
+    </div>
+</template>
